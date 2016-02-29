@@ -34,7 +34,8 @@ class MessagesController < ApplicationController
   def message_params
     params.require(:message).permit(
       :name,
-      :body
+      :body,
+      :age
       )
   end
   def set_messege
